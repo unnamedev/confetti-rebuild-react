@@ -1,0 +1,45 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 65px;
+  padding: 15px 10px;
+  align-self: center;
+  background-color: #017bff;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  transition: all .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-.15em);
+    box-shadow: 0 12px 15px 0 rgb(0, 123, 255, 25%);
+  }
+
+  &--centered {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--invert {
+    background-color: #fff;
+    color: #017bff;
+  }
+
+  &--with-ico {
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+  }
+
+}

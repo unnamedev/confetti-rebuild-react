@@ -1,0 +1,78 @@
+@keyframes move {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.habitBubble {
+  position: absolute;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: #eaf0fa;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
+
+  span {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  &[data-option='0'] {
+    animation: move 25s linear 2s infinite, jiggle cubic-bezier(0.37, 0, 0.63, 1) 1.9s infinite;
+  }
+
+  &[data-option='1'] {
+    animation: move 25s linear 2s infinite, jiggle cubic-bezier(0.37, 0, 0.63, 1) 2s infinite;
+  }
+
+  &[data-option='2'] {
+    animation: move 25s linear 2s infinite, jiggle cubic-bezier(0.37, 0, 0.63, 1) 2.1s infinite;
+  }
+
+  &[data-option='3'] {
+    animation: move 25s linear 2s infinite, jiggle cubic-bezier(0.37, 0, 0.63, 1) 2.1s infinite;
+  }
+
+  &[data-option='4'] {
+    animation: move 25s linear 2s infinite, jiggle cubic-bezier(0.37, 0, 0.63, 1) 1.8s infinite;
+  }
+
+  &[data-option='5'] {
+    animation: move 25s linear 2s infinite, jiggle cubic-bezier(0.37, 0, 0.63, 1) 2s infinite;
+  }
+}
+
+.indexAnimation__container {
+  height: 500px;
+  width: 1600px;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0) 20%, white 75%);
+  }
+}

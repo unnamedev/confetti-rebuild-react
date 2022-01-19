@@ -1,0 +1,27 @@
+.intro {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: #fff url("../../assets/images/intro/bg.svg") no-repeat top;
+
+  &__container {
+    max-width: 800px;
+  }
+
+  &__title {
+    color: #292f36;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 79.2px;
+    margin-bottom: 24px;
+  }
+
+  &__lead {
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,106 @@
+.price {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  &__container {
+    max-width: 934px;
+
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      grid-column-gap: 100px;
+      align-items: center;
+    }
+  }
+
+
+  &__title {
+    margin-bottom: 16px;
+
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
+
+  &__lead {
+    max-width: 500px;
+    margin-bottom: 25px;
+
+    @media (min-width: 992px) {
+      text-align: left;
+    }
+  }
+
+  &__button {
+    margin-bottom: 20px;
+
+    @media (min-width: 992px) {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #eef3fb;
+  }
+
+  &__list {
+    display: grid;
+    gap: 20px;
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, min-content);
+      max-width: 630px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    min-width: 190px;
+
+    &-ico {
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+
+    &-title {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    &-types {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-bottom: 15px;
+    }
+
+    &-value {
+      color: #292f36;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 37.5px;
+      margin: 10px 0 0;
+    }
+  }
+
+  &__features {
+    display: grid;
+    padding-left: 25px;
+    list-style: url("../../assets/images/price/check-ico.svg");
+
+    &-item {
+      color: #000;
+      font-weight: 500;
+      line-height: 24px;
+
+    }
+  }
+}

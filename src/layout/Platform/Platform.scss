@@ -1,0 +1,103 @@
+.platform {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(#fff, #f2f4f7);
+
+  @media (min-width: 992px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__lead {
+    margin-bottom: 23px;
+    @media (min-width: 992px) {
+      margin-bottom: 50px;
+    }
+
+    a {
+      color: #007bff;
+      font-weight: 600;
+    }
+  }
+
+  &__mobile {
+    max-width: 325px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      right: 0;
+      bottom: 60px;
+    }
+
+    &-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 275px;
+      margin: 0 auto;
+    }
+
+    &-frame {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__store {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    margin-bottom: 50px;
+
+    &-frame {
+      display: block;
+      max-width: 1050px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 30px rgb(149 173 209 / 64%);
+      border-radius: 5px;
+
+      @media (min-width: 992px) {
+        border-radius: 15px;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 40px;
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

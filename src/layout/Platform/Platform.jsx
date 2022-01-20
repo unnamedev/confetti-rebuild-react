@@ -3,8 +3,8 @@ import Title from "../../components/Title/Title"
 import LeadText from "../../components/LeadText/LeadText"
 import {data} from "./data"
 import "./Platform.scss"
-import Button from "../../components/Button/Button";
-import Store from "../../components/Store/Store";
+import Button from "../../components/Button/Button"
+import Store from "../../components/Store/Store"
 
 const Platform = () => {
     const {frameDesktop, frameMobile, videoSrc, videoBackup, headline, buttonText, buttonGoogle} = data

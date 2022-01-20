@@ -1,0 +1,44 @@
+.page-policy {
+  background-color: #eef3fb;
+  text-align: left;
+
+  &__container {
+    max-width: 750px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__date {
+    color: #292f36;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 40px;
+  }
+
+  &__item {
+    &-title {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    &-content {
+      display: grid;
+      gap: 10px;
+      font-size: 18px;
+      line-height: 1.3em;
+      color: #292f36;
+    }
+  }
+}

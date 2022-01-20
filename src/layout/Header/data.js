@@ -1,5 +1,6 @@
 import burger from '../../assets/images/header/burger.svg'
 import logo from '../../assets/images/header/logo.svg'
+import logoWhite from '../../assets/images/header/logo-white.svg'
 
 import ico01 from '../../assets/images/footer/ico-1.svg'
 import ico02 from '../../assets/images/footer/ico-2.svg'
@@ -7,7 +8,8 @@ import ico02 from '../../assets/images/footer/ico-2.svg'
 export const data = {
     logo: {
         alt: "Confetti",
-        src: `${logo}`
+        src: `${logo}`,
+        srcWhite: `${logoWhite}`
     },
     burger: `${burger}`,
     desktopMenu: [
@@ -17,11 +19,11 @@ export const data = {
         },
         {
             label: "Sign In",
-            href: "#"
+            href: "/login"
         },
         {
             label: "Try for Free",
-            href: "#",
+            href: "/signup",
             type: "button"
         }
     ],
@@ -29,11 +31,11 @@ export const data = {
         user: [
             {
                 label: "Login",
-                href: "#"
+                href: "/login"
             },
             {
                 label: "Sign Up",
-                href: "#"
+                href: "/signup"
             }
         ],
         pricing: [
@@ -44,11 +46,11 @@ export const data = {
         ],
         menuFirst: [
             {
-                href: "#",
+                href: "/policy",
                 label: "Privacy Policy"
             },
             {
-                href: "#",
+                href: "/terms",
                 label: "Policy of Service"
             },
             {

@@ -1,6 +1,6 @@
-import React from 'react';
-import './RoutineAnimation.scss'
-import {habitList} from './data'
+import React from "react";
+import "./RoutineAnimation.scss"
+import {habitList} from "./data"
 
 const HabitBubble = ({name, notToDo, color, offsetY, animationDelay}) => {
     const clientHeight = 500;
@@ -15,20 +15,17 @@ const HabitBubble = ({name, notToDo, color, offsetY, animationDelay}) => {
                 top: offsetTop + offsetY,
             }}
         >
-            <div className={notToDo ? 'color-indicator-cross' : 'color-indicator'} style={{backgroundColor: color}}/>
+            <div className={notToDo ? "color-indicator-cross" : "color-indicator"} style={{backgroundColor: color}}/>
             <span>{name}</span>
         </div>
     );
 };
 
-const RoutineAnimation = () => {
-    return (
-        <div className="indexAnimation__container">
-            {habitList.map((habit) => (
-                <HabitBubble key={habit.name} {...habit} />
-            ))}
-        </div>
-    );
-};
+const RoutineAnimation = () => (
+    <div className="indexAnimation__container">
+        {habitList.map((habit) => (<HabitBubble key={habit.name} {...habit} />))}
+    </div>
+)
+
 
 export default RoutineAnimation

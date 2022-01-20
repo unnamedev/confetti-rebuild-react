@@ -1,7 +1,8 @@
 import React from "react"
 import {data} from "./data"
 import './Store.scss'
-const Store = ({modClass = ''}) =>
+
+const Store = ({modClass = ""}) =>
     <ul className={`store ${modClass}`}>
         {data.map((i, idx) => (
             <li className="store__item" key={idx}>

@@ -1,7 +1,7 @@
 import React from "react"
 import {data} from "./data"
 import "./Footer.scss"
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"
 
 const Footer = () => {
     const {logo, copyright, menus, socials} = data
@@ -20,7 +20,7 @@ const Footer = () => {
                         <ul className="footer__menu" key={idx}>
                             {menu.map((item, menuIdx) => (
                                 <li className="footer__menu-item" key={menuIdx}>
-                                    <a href={item.href} className="footer__menu-link">{item.label}</a>
+                                    <Link to={item.href} className="footer__menu-link">{item.label}</Link>
                                 </li>
                             ))}
                         </ul>

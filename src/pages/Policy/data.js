@@ -1,5 +1,5 @@
 export const data = {
-    headline: "Policy",
+    headline: "PRIVACY POLICY",
     date: "Last updated: 01/01/2020",
     list: [
         {

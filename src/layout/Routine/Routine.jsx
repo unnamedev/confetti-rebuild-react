@@ -3,7 +3,7 @@ import Title from "../../components/Title/Title"
 import LeadText from "../../components/LeadText/LeadText"
 import {data} from "./data"
 import "./Routine.scss"
-import RoutineAnimation from "../../components/RoutineAnimation/RoutineAnimation";
+import RoutineAnimation from "../../components/RoutineAnimation/RoutineAnimation"
 
 const Routine = () => {
     const {headline, lead} = data

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="227.015" height="227.015" viewBox="0 0 227.015 227.015">
+    <defs>
+        <style>
+            .cls-1{fill:none;clip-rule:evenodd}.cls-2{fill:#fff}.cls-3{clip-path:url(#clip-path)}.cls-4{fill:#3e82f1}.cls-5{clip-path:url(#clip-path-2)}.cls-6{fill:#32a753}.cls-7{clip-path:url(#clip-path-3)}.cls-8{fill:#f9bb00}.cls-9{clip-path:url(#clip-path-4)}.cls-10{fill:#e74133}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Path_218" d="M331.544 238.972a86.1 86.1 0 0 0-1.364-15.337h-70.62v29h40.355a34.5 34.5 0 0 1-14.962 22.632v18.814h24.233c14.179-13.054 22.359-32.277 22.359-55.113zm0 0" class="cls-1" data-name="Path 218" transform="translate(-259.56 -223.635)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Path_219" d="M167.491 350.559c20.246 0 37.219-6.714 49.625-18.166l-24.233-18.814c-6.715 4.5-15.3 7.158-25.393 7.158-19.53 0-36.061-13.19-41.957-30.914h-25.05v19.427a74.954 74.954 0 0 0 67.008 41.309zm0 0" class="cls-1" data-name="Path 219" transform="translate(-100.483 -289.822)"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="Path_220" d="M114.576 223.978a44.322 44.322 0 0 1 0-28.494v-19.427H89.525a75.078 75.078 0 0 0 0 67.349l25.051-19.428zm0 0" class="cls-1" data-name="Path 220" transform="translate(-81.549 -176.057)"/>
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <path id="Path_221" d="M167.491 107.812a40.508 40.508 0 0 1 28.664 11.214l21.507-21.507a72.062 72.062 0 0 0-50.171-19.53 74.955 74.955 0 0 0-67.008 41.311l25.051 19.427c5.9-17.724 22.427-30.914 41.957-30.914zm0 0" class="cls-1" data-name="Path 221" transform="translate(-100.483 -77.989)"/>
+        </clipPath>
+    </defs>
+    <g id="Group_847" data-name="Group 847" transform="translate(-452.473 -243.876)">
+        <path id="bxl-facebook-square" d="M217.4 3H15.612A12.608 12.608 0 0 0 3 15.612V217.4a12.608 12.608 0 0 0 12.612 12.612H217.4a12.608 12.608 0 0 0 12.615-12.612V15.612A12.608 12.608 0 0 0 217.4 3z" class="cls-2" transform="translate(449.473 240.876)"/>
+        <g id="Group_838" data-name="Group 838" transform="translate(492 282.969)">
+            <g id="Group_839" data-name="Group 839" transform="translate(74.983 61.35)">
+                <g id="Group_838-2" class="cls-3" data-name="Group 838">
+                    <path id="Rectangle_318" d="M0 0h155.299v153.766H0z" class="cls-4" data-name="Rectangle 318" transform="translate(-41.657 -41.658)"/>
+                </g>
+            </g>
+            <g id="Group_841" data-name="Group 841" transform="translate(7.976 89.23)">
+                <g id="Group_840" class="cls-5" data-name="Group 840">
+                    <path id="Rectangle_319" d="M0 0h199.949v144.052H0z" class="cls-6" data-name="Rectangle 319" transform="translate(-41.658 -41.657)"/>
+                </g>
+            </g>
+            <g id="Group_843" data-name="Group 843" transform="translate(0 41.309)">
+                <g id="Group_842" class="cls-7" data-name="Group 842">
+                    <path id="Rectangle_320" d="M0 0h116.342v150.664H0z" class="cls-8" data-name="Rectangle 320" transform="translate(-41.658 -41.658)"/>
+                </g>
+            </g>
+            <g id="Group_845" data-name="Group 845" transform="translate(7.976)">
+                <g id="Group_844" class="cls-9" data-name="Group 844">
+                    <path id="Rectangle_321" d="M0 0h200.494v144.051H0z" class="cls-10" data-name="Rectangle 321" transform="translate(-41.658 -41.657)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

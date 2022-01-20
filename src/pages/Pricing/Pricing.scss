@@ -1,0 +1,78 @@
+.pricing {
+  padding: 50px 0 100px;
+  background-color: #007bff;
+  min-height: calc(100vh - 430px);
+  background-image: url("../../assets/images/intro/bg.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &__title {
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+
+  &__list {
+    display: grid;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 25px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 650px;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 #0060c7;
+    border-radius: 10px;
+    min-width: 300px;
+    padding: 25px;
+
+    &-figure {
+      margin-bottom: 10px;
+    }
+
+    &-name {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    &-types {
+      margin-bottom: 25px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-habits {
+      margin-bottom: 25px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &-value {
+      color: #292f36;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-bottom: 5px;
+    }
+
+    &-time {
+      color: #007bff;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    &-button {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

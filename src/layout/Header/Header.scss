@@ -1,4 +1,15 @@
 .header {
+  &--white {
+    background-color: #fff;
+  }
+  &--blue {
+    background-color: #007bff;
+
+    .header__desktop-link {
+      color: #ffffff;
+    }
+  }
+
   &__logo {
     max-width: 156px;
     display: block;

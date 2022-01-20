@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="227.015" height="227.124" viewBox="0 0 227.015 227.124">
+    <defs>
+        <style>
+            .cls-1{fill:#2d5c98}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_846" data-name="Group 846" transform="translate(-140.473 -244.876)">
+        <path id="Rectangle_322" d="M0 0h160v206H0z" class="cls-1" data-name="Rectangle 322" transform="translate(194 266)"/>
+        <path id="bxl-facebook-square" d="M217.4 3H15.612A12.608 12.608 0 0 0 3 15.612V217.4a12.608 12.608 0 0 0 12.612 12.612h108.652v-87.776H94.777v-34.368h29.487V82.644c0-29.323 17.909-45.3 44.142-45.3a246.658 246.658 0 0 1 26.422 1.349v30.52h-18.1c-14.226 0-17 6.785-17 16.711v21.882h34.014l-4.414 34.368h-29.612v87.842H217.4a12.608 12.608 0 0 0 12.615-12.616V15.612A12.608 12.608 0 0 0 217.4 3z" class="cls-2" transform="translate(137.473 241.876)"/>
+    </g>
+</svg>

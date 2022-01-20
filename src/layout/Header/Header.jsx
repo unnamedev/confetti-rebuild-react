@@ -4,7 +4,7 @@ import {data} from './data'
 import Button from "../../components/Button/Button"
 import {Link} from "react-router-dom"
 
-const Header = () => {
+const Header = ({type = "white"}) => {
     const {logo, burger, desktopMenu, mobileData: {user, pricing, menuFirst, menuSecond, socials}} = data
     const [openMenu, setOpenMenu] = useState(false)
 
@@ -17,14 +17,17 @@ const Header = () => {
         document.body.style.overflowY = !openMenu ? 'hidden' : 'unset'
     }
 
-    return <header className="header">
+    return <header className={`header ${type !== "white" ? `header--${type}` : "header--white"}`}>
         <nav className="header-nav header__nav container">
+
             <Link to="/" className="logo header__logo">
-                <img src={logo.src} alt={logo.alt} className="header__logo-ico"/>
+                <img src={type !== "white" ? logo.srcWhite : logo.src} alt={logo.alt} className="header__logo-ico"/>
             </Link>
+
             <button className="header__burger" onClick={() => burgerHandler()}>
                 <img src={burger} alt="Open Menu" className="header__burger-ico"/>
             </button>
+
             <div className="header__desktop">
                 <ul className="header__desktop-list">
                     {desktopMenu.map((menuItem, menuItemIdx) => (
@@ -33,13 +36,16 @@ const Header = () => {
                                 <Link className="header__desktop-link" to={menuItem.href}>{menuItem.label}</Link>
                             )}
                             {menuItem.type && (
-                                <Button tagName="a" href={menuItem.href}
-                                        modClass="header__desktop-button">{menuItem.label}</Button>
+                                <Link to={menuItem.href}>
+                                    <Button tagName="button" modClass="header__desktop-button"
+                                            invert={type !== "white"}>{menuItem.label}</Button>
+                                </Link>
                             )}
                         </li>
                     ))}
                 </ul>
             </div>
+
             <div onClick={(e) => overlayHandler(e)}
                  className={`header__mobile header__overlay ${openMenu === true ? "header__overlay--is-open" : ""}`}>
                 <div className="header__side">

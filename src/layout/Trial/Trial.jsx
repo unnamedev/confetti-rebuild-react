@@ -3,7 +3,7 @@ import "./Trial.scss"
 import {data} from "./data"
 import Title from "../../components/Title/Title"
 import LeadText from "../../components/LeadText/LeadText"
-import Button from "../../components/Button/Button";
+import Button from "../../components/Button/Button"
 
 const Trial = () => {
     const {headline, lead, buttonText, src} = data

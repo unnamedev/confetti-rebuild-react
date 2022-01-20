@@ -1,7 +1,6 @@
 import React, {useState} from "react"
-import './Header.scss'
-import {data} from './data'
-import Button from "../../components/Button/Button"
+import "./Header.scss"
+import {data} from "./data"
 import {Link} from "react-router-dom"
 
 const Header = ({type = "white"}) => {
@@ -10,11 +9,11 @@ const Header = ({type = "white"}) => {
 
     const burgerHandler = () => {
         setOpenMenu((prev) => !prev)
-        document.body.style.overflowY = !openMenu ? 'hidden' : 'unset'
+        document.body.style.overflowY = !openMenu ? "hidden" : "unset"
     }
     const overlayHandler = (e) => {
         setOpenMenu(!e.target.classList.contains("header__overlay"))
-        document.body.style.overflowY = !openMenu ? 'hidden' : 'unset'
+        document.body.style.overflowY = !openMenu ? "hidden" : "unset"
     }
 
     return <header className={`header ${type !== "white" ? `header--${type}` : "header--white"}`}>
@@ -24,9 +23,11 @@ const Header = ({type = "white"}) => {
                 <img src={type !== "white" ? logo.srcWhite : logo.src} alt={logo.alt} className="header__logo-ico"/>
             </Link>
 
-            <button className="header__burger" onClick={() => burgerHandler()}>
-                <img src={burger} alt="Open Menu" className="header__burger-ico"/>
-            </button>
+            {window.location.pathname !== '/login' && window.location.pathname !== '/signup' && (
+                <button className="header__burger" onClick={() => burgerHandler()}>
+                    <img src={burger} alt="Open Menu" className="header__burger-ico"/>
+                </button>
+            )}
 
             <div className="header__desktop">
                 <ul className="header__desktop-list">
@@ -36,9 +37,9 @@ const Header = ({type = "white"}) => {
                                 <Link className="header__desktop-link" to={menuItem.href}>{menuItem.label}</Link>
                             )}
                             {menuItem.type && (
-                                <Link to={menuItem.href}>
-                                    <Button tagName="button" modClass="header__desktop-button"
-                                            invert={type !== "white"}>{menuItem.label}</Button>
+                                <Link to={menuItem.href} className="button header__desktop-button"
+                                      invert={type !== "white"}>
+                                    {menuItem.label}
                                 </Link>
                             )}
                         </li>
@@ -52,8 +53,7 @@ const Header = ({type = "white"}) => {
                     <ul className="header__user">
                         {user.map((item, idx) => (
                             <li className="header__user-item" key={idx}>
-                                <Button tagName="a" href={item.href}
-                                        modClass="header__user-button">{item.label}</Button>
+                                <Link to={item.href} className="button header__user-button">{item.label}</Link>
                             </li>
                         ))}
                     </ul>
@@ -61,7 +61,7 @@ const Header = ({type = "white"}) => {
                         <ul className="header__menu">
                             {pricing.map((item, idx) => (
                                 <li className="header__menu-item" key={idx}>
-                                    <a className="header__menu-link" href={item.href}>{item.label}</a>
+                                    <Link className="header__menu-link" to={item.href}>{item.label}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -70,7 +70,7 @@ const Header = ({type = "white"}) => {
                         <ul className="header__menu">
                             {menuFirst.map((item, idx) => (
                                 <li className="header__menu-item" key={idx}>
-                                    <a className="header__menu-link" href={item.href}>{item.label}</a>
+                                    <Link className="header__menu-link" to={item.href}>{item.label}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -79,7 +79,7 @@ const Header = ({type = "white"}) => {
                         <ul className="header__menu">
                             {menuSecond.map((item, idx) => (
                                 <li className="header__menu-item" key={idx}>
-                                    <a className="header__menu-link" href={item.href}>{item.label}</a>
+                                    <Link className="header__menu-link" to={item.href}>{item.label}</Link>
                                 </li>
                             ))}
                         </ul>

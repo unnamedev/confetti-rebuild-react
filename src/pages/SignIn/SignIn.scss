@@ -1,7 +1,12 @@
 .page-login {
-  padding: 50px 0 100px;
+  padding: 50px 0;
   min-height: calc(100vh - 430px);
-  background-color: #007bff;
+
+
+  @media (min-width: 768px) {
+    padding: 50px 0 100px;
+    background-color: #007bff;
+  }
 
   &__container {
     display: flex;

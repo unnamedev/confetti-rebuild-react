@@ -1,5 +1,5 @@
-import ico01 from '../../assets/images/intro/ico-app-store.svg'
-import ico02 from '../../assets/images/intro/ico-google-play.svg'
+import ico01 from "../../assets/images/intro/ico-app-store.svg"
+import ico02 from "../../assets/images/intro/ico-google-play.svg"
 
 export const data = [
     {

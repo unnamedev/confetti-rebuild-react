@@ -1,15 +1,16 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "./Form.scss"
-import Title from "../Title/Title";
-import Button from "../Button/Button";
+import Title from "../Title/Title"
+import Button from "../Button/Button"
 import icoGoogle from "../../assets/images/form/google-ico.svg"
 import icoFacebook from "../../assets/images/form/fb-ico.svg"
-import {Link} from "react-router-dom";
 
-const Form = ({type}) => {
-    return <div className="form-wrapper">
+const Form = ({type}) => (
+    <div className="form-wrapper">
         <Title tagName="h2" modClass="form__title">{`${type === "sign-up" ? "Welcome" : "Welcome back"}!`}</Title>
         <form className={`form form--${type}`}>
+            {/*SIGN IP*/}
             {type === "sign-up" && (
                 <>
                     <div className="form__group">
@@ -44,15 +45,15 @@ const Form = ({type}) => {
                             <input type="password" name="password" placeholder="Password" className="form__field"/>
                         </label>
                     </div>
-                    <a className="form__forgot-link" href="#">Forgot your password?</a>
+                    <a className="form__forgot-link" href="/#">Forgot your password?</a>
                 </>
             )}
 
+            <Button tagName="button" type="submit" modClass="form__button">
+                {`${type === "sign-up" ? "Sign Up" : "Sign In"}`}
+            </Button>
 
-            <Button tagName="button" type="submit"
-                    modClass="form__button">{`${type === "sign-up" ? "Sign Up" : "Sign In"}`}</Button>
-
-            <div className="form__another">OR</div>
+            <div className="form__another"/>
 
             <button className="form__social-button form__social-button--google">
                 <img src={icoGoogle} alt="Google Icon"/>
@@ -70,6 +71,6 @@ const Form = ({type}) => {
             </p>
         </form>
     </div>
-}
+)
 
 export default Form

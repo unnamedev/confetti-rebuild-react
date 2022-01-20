@@ -31,6 +31,11 @@
     &-title {
       text-align: left;
       margin-bottom: 10px;
+      font-size: 25px;
+      
+      @media (min-width: 992px) {
+        font-size: 30px;
+      }
     }
 
     &-content {
@@ -39,6 +44,7 @@
       font-size: 18px;
       line-height: 1.3em;
       color: #292f36;
+      word-break: break-all;
     }
   }
 }

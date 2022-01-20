@@ -1,6 +1,6 @@
 import React from "react"
 import {data} from "./data"
-import './Store.scss'
+import "./Store.scss"
 
 const Store = ({modClass = ""}) =>
     <ul className={`store ${modClass}`}>

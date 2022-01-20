@@ -6,10 +6,10 @@ import Price from "../layout/Price/Price"
 import Routine from "../layout/Routine/Routine"
 import Trial from "../layout/Trial/Trial"
 import Analytics from "../layout/Analytics/Analytics"
-import Header from "../layout/Header/Header";
+import Header from "../layout/Header/Header"
 
-const Home = () => {
-    return <>
+const Home = () => (
+    <>
         <Header/>
         <Intro/>
         <Platform/>
@@ -19,6 +19,6 @@ const Home = () => {
         <Trial/>
         <Analytics/>
     </>
-}
+)
 
 export default Home

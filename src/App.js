@@ -10,22 +10,20 @@ import Policy from "./pages/Policy/Policy"
 import SignUp from "./pages/SignUp/SignUp"
 import SignIn from "./pages/SignIn/SignIn"
 
-const App = () => {
-    return (
-        <>
-            <Router>
-                <Routes>
-                    <Route path="/" exact element={<Home/>}/>
-                    <Route path="/terms" exact element={<Terms/>}/>
-                    <Route path="/policy" exact element={<Policy/>}/>
-                    <Route path="/pricing" exact element={<Pricing/>}/>
-                    <Route path="/signup" exact element={<SignUp/>}/>
-                    <Route path="/login" exact element={<SignIn/>}/>
-                </Routes>
-                <Footer/>
-            </Router>
-        </>
-    )
-}
+const App = () => (
+    <>
+        <Router>
+            <Routes>
+                <Route path="/" exact element={<Home/>}/>
+                <Route path="/terms" exact element={<Terms/>}/>
+                <Route path="/policy" exact element={<Policy/>}/>
+                <Route path="/pricing" exact element={<Pricing/>}/>
+                <Route path="/signup" exact element={<SignUp/>}/>
+                <Route path="/login" exact element={<SignIn/>}/>
+            </Routes>
+            <Footer/>
+        </Router>
+    </>
+)
 
 export default App
